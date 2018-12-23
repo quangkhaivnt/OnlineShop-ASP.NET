@@ -13,6 +13,10 @@ namespace OnlineShop.Controllers
         // GET: HomeClient
         public ActionResult Index()
         {
+            ViewBag.Slides = new SlideDao().ListAll();
+            var productDao = new ProductDao();
+            ViewBag.NewProducts = productDao.ListNewProduct(4);
+            ViewBag.ListFeatureProducts = productDao.ListFeatrureProduct(4);
             return View();
         }
 
