@@ -43,7 +43,7 @@ namespace OnlineShop
 
             routes.MapRoute(
                 name: "Contact",
-                url: "lien-he",
+                url: "liên-hệ",
                 defaults: new { controller = "Contact", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "OnlineShop.Controllers" }
             );
