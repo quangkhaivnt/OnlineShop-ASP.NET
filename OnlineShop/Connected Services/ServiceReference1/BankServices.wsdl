@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BankServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:60619/BankServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:60619/BankServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:60619/BankServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFAssignment" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBankServices_AddAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAccount" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartner" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddHistory" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_AddTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_GetTransactionListAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionListAll" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_GetTransactionListAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_LoginAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginAccount" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_LoginAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_LoginPartnerAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginPartnerAccount" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_LoginPartnerAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginPartnerAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_GetPartnerById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerById" />
+  </wsdl:message>
+  <wsdl:message name="IBankServices_GetPartnerById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnerByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBankServices">
+    <wsdl:operation name="AddAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/AddAccount" message="tns:IBankServices_AddAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/AddAccountResponse" message="tns:IBankServices_AddAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/AddCustomer" message="tns:IBankServices_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/AddCustomerResponse" message="tns:IBankServices_AddCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/AddPartner" message="tns:IBankServices_AddPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/AddPartnerResponse" message="tns:IBankServices_AddPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/AddHistory" message="tns:IBankServices_AddHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/AddHistoryResponse" message="tns:IBankServices_AddHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/AddTransaction" message="tns:IBankServices_AddTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/AddTransactionResponse" message="tns:IBankServices_AddTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionListAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/GetTransactionListAll" message="tns:IBankServices_GetTransactionListAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/GetTransactionListAllResponse" message="tns:IBankServices_GetTransactionListAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/LoginAccount" message="tns:IBankServices_LoginAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/LoginAccountResponse" message="tns:IBankServices_LoginAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginPartnerAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/LoginPartnerAccount" message="tns:IBankServices_LoginPartnerAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/LoginPartnerAccountResponse" message="tns:IBankServices_LoginPartnerAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBankServices/GetPartnerById" message="tns:IBankServices_GetPartnerById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBankServices/GetPartnerByIdResponse" message="tns:IBankServices_GetPartnerById_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBankServices" type="tns:IBankServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddAccount">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/AddAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPartner">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/AddPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHistory">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/AddHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/AddTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionListAll">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/GetTransactionListAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginAccount">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/LoginAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginPartnerAccount">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/LoginPartnerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnerById">
+      <soap:operation soapAction="http://tempuri.org/IBankServices/GetPartnerById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BankServices">
+    <wsdl:port name="BasicHttpBinding_IBankServices" binding="tns:BasicHttpBinding_IBankServices">
+      <soap:address location="http://localhost:60619/BankServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
