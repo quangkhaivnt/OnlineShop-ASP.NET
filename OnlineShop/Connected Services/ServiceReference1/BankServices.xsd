@@ -33,10 +33,10 @@
   <xs:element name="Customer" nillable="true" type="tns:Customer" />
   <xs:complexType name="Partner">
     <xs:sequence>
-      <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="AccountNumber" type="xs:long" />
       <xs:element minOccurs="0" name="CreatedAt" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Id" type="xs:long" />
-      <xs:element minOccurs="0" name="PartnerAccount" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PartnerAccount" type="xs:long" />
       <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Salt" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
@@ -58,15 +58,15 @@
   <xs:element name="HistoryTransaction" nillable="true" type="tns:HistoryTransaction" />
   <xs:complexType name="Transaction">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:decimal" />
-      <xs:element minOccurs="0" name="BillId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BillId" type="xs:int" />
       <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CreatedAt" nillable="true" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="FeeTransaction" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FeeTransaction" type="xs:decimal" />
       <xs:element minOccurs="0" name="Id" type="xs:long" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ReceiverAccountNumber" nillable="true" type="xs:long" />
-      <xs:element minOccurs="0" name="SenderAccountNumber" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ReceiverAccountNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="SenderAccountNumber" type="xs:long" />
       <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="Type" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="UpdatedAt" nillable="true" type="xs:dateTime" />

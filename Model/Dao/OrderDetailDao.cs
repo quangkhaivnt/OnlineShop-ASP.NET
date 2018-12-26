@@ -28,5 +28,17 @@ namespace Model.Dao
                 return false;
             }
         }
+
+        public long Find(long id)
+        {
+            var orderDetail = db.OrderDetails.Where(x => x.OrderID == id).ToList();
+            long total = 0;
+            foreach (var item in orderDetail)
+            {
+                long price = Convert.ToInt64(item.Price);
+                total += price;
+            }
+            return total;
+        }
     }
 }

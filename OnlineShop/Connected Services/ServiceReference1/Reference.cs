@@ -417,7 +417,7 @@ namespace OnlineShop.ServiceReference1 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<long> AccountNumberField;
+        private long AccountNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<System.DateTime> CreatedAtField;
@@ -426,7 +426,7 @@ namespace OnlineShop.ServiceReference1 {
         private long IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<long> PartnerAccountField;
+        private long PartnerAccountField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PasswordField;
@@ -451,7 +451,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<long> AccountNumber {
+        public long AccountNumber {
             get {
                 return this.AccountNumberField;
             }
@@ -490,7 +490,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<long> PartnerAccount {
+        public long PartnerAccount {
             get {
                 return this.PartnerAccountField;
             }
@@ -715,10 +715,10 @@ namespace OnlineShop.ServiceReference1 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<decimal> AmountField;
+        private decimal AmountField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> BillIdField;
+        private int BillIdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ContentField;
@@ -727,7 +727,7 @@ namespace OnlineShop.ServiceReference1 {
         private System.Nullable<System.DateTime> CreatedAtField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<decimal> FeeTransactionField;
+        private decimal FeeTransactionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private long IdField;
@@ -736,10 +736,10 @@ namespace OnlineShop.ServiceReference1 {
         private string NameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<long> ReceiverAccountNumberField;
+        private long ReceiverAccountNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<long> SenderAccountNumberField;
+        private long SenderAccountNumberField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.Nullable<int> StatusField;
@@ -761,7 +761,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<decimal> Amount {
+        public decimal Amount {
             get {
                 return this.AmountField;
             }
@@ -774,7 +774,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> BillId {
+        public int BillId {
             get {
                 return this.BillIdField;
             }
@@ -813,7 +813,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<decimal> FeeTransaction {
+        public decimal FeeTransaction {
             get {
                 return this.FeeTransactionField;
             }
@@ -852,7 +852,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<long> ReceiverAccountNumber {
+        public long ReceiverAccountNumber {
             get {
                 return this.ReceiverAccountNumberField;
             }
@@ -865,7 +865,7 @@ namespace OnlineShop.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<long> SenderAccountNumber {
+        public long SenderAccountNumber {
             get {
                 return this.SenderAccountNumberField;
             }

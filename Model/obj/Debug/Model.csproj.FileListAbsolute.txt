@@ -5,7 +5,6 @@ E:\OnlineShop\Model\bin\Debug\EntityFramework.dll
 E:\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
 E:\OnlineShop\Model\bin\Debug\EntityFramework.xml
 E:\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
-E:\OnlineShop\Model\obj\Debug\Model.csprojAssemblyReference.cache
 E:\OnlineShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 E:\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
 E:\OnlineShop\Model\obj\Debug\Model.dll

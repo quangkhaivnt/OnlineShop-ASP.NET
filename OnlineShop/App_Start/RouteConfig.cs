@@ -56,6 +56,13 @@ namespace OnlineShop
             );
 
             routes.MapRoute(
+               name: "Pay online",
+               url: "dang-nhap-pay",
+               defaults: new { controller = "PayLoginClient", action = "Index", id = UrlParameter.Optional },
+               namespaces: new[] { "BankOlineShopConsumer.Controllers" }
+           );
+
+            routes.MapRoute(
                 name: "Payment Success",
                 url: "hoan-thanh",
                 defaults: new { controller = "Cart", action = "Success", id = UrlParameter.Optional },

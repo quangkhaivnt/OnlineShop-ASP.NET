@@ -63,6 +63,26 @@
                 }
             })
         });
+
+        $("#payOnline").off('click').on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                data: {
+                    shipName: $(".shipName").val(),
+                    mobile: $(".mobile").val(),
+                    address: $(".address").val(),
+                    email: $(".email").val()
+                },
+                url: 'PayLoginClient/SaveOrderPay',
+                dataType: 'json',
+                type: 'POST',
+                success: function (res) {
+                    if (res.status == true) {
+                        window.location.href = "/dang-nhap-pay";
+                    }
+                }
+            });
+        });
     }
 }
 cart.init();
