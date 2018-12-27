@@ -96,3 +96,5 @@ E:\OnlineShop\OnlineShop\obj\Debug\OnlineShop.csproj.CoreCompileInputs.cache
 E:\OnlineShop\OnlineShop\obj\Debug\OnlineShop.csproj.CopyComplete
 E:\OnlineShop\OnlineShop\obj\Debug\OnlineShop.dll
 E:\OnlineShop\OnlineShop\obj\Debug\OnlineShop.pdb
+E:\OnlineShop\OnlineShop\bin\Common.dll
+E:\OnlineShop\OnlineShop\bin\Common.pdb

@@ -37,7 +37,7 @@ namespace OnlineShop.Controllers
                 transaction.CreatedAt = DateTime.Now;
                 transaction.UpdatedAt = DateTime.Now;
                 var orderID = new OrderDao().Find();
-                //long paypalId = 300000000005;
+                //long paypalId = 2;
                 if (client.Transaction(transaction))
                 {
                     var orderTrue = new OrderDao().UpdateStatus(orderID);

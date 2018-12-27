@@ -21,6 +21,13 @@ namespace OnlineShop
             );
 
             routes.MapRoute(
+                name: "Product",
+                url: "san-pham",
+                defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "OnlineShop.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Product Category",
                 url: "chi-tiet/{metatitle}-{id}",
                 defaults: new { controller = "Product", action = "Detail", id = UrlParameter.Optional },
@@ -91,9 +98,17 @@ namespace OnlineShop
             );
 
             routes.MapRoute(
+                name: "Đăng nhập",
+                url: "dang-nhap",
+                defaults: new { controller = "LoginClient", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "OnlineShop.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "HomeClient", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "OnlineShop.Controllers" }
             );
 
             

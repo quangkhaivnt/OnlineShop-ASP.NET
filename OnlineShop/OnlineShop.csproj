@@ -355,6 +355,7 @@
     <None Include="Connected Services\ServiceReference1\BankServices.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <Content Include="Assets\Client\template\neworder.html" />
     <Content Include="Connected Services\ServiceReference1\OnlineShop.ServiceReference1.Partner.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -482,6 +483,7 @@
     <Content Include="Views\LoginClient\Index.cshtml" />
     <Content Include="Views\PayLoginClient\Index.cshtml" />
     <Content Include="Views\CheckoutClient\Checkout.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -497,6 +499,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{BD819317-5158-4DF4-885B-18469033E470}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{5f742a64-d21f-4c37-bd32-a309bb85b527}</Project>
       <Name>Model</Name>
