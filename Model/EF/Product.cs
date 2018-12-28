@@ -33,7 +33,7 @@ namespace Model.EF
 
         public decimal? PromotionPrice { get; set; }
 
-        public bool? IncludeVat { get; set; }
+        public bool IncludeVat { get; set; }
 
         [StringLength(10)]
         public string Quantity { get; set; }
@@ -45,7 +45,7 @@ namespace Model.EF
 
         public int? Warranty { get; set; }
 
-        public bool? Status { get; set; }
+        public bool Status { get; set; }
 
         public DateTime? CreatedDate { get; set; }
 
