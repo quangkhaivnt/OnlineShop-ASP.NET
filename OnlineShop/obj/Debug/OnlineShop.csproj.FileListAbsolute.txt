@@ -107,3 +107,6 @@ E:\OnlineShop\OnlineShop\bin\BotDetect.Web.Mvc.dll
 E:\OnlineShop\OnlineShop\bin\System.Data.SQLite.dll
 E:\OnlineShop\OnlineShop\bin\System.Data.SQLite.xml
 E:\OnlineShop\OnlineShop\bin\System.Data.SQLite.dll.config
+E:\OnlineShop\OnlineShop\bin\StaticResources.dll
+E:\OnlineShop\OnlineShop\bin\StaticResources.pdb
+E:\OnlineShop\OnlineShop\bin\en\StaticResources.resources.dll
