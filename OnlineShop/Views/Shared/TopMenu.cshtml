@@ -10,8 +10,8 @@
 
         @if (user != null)
         {
-                <li><a href="#">@user.UserName</a></li>
-                <li><a href="#">Đăng Xuất</a></li>
+                <li>Xin chào :<a href="#">@user.UserName</a></li>
+                <li>@Html.ActionLink("Đăng xuất", "Loguot", "User")</li>
         }
         else
         {

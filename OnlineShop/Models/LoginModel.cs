@@ -8,11 +8,13 @@ namespace OnlineShop.Models
 {
     public class LoginModel
     {
-        [Required(ErrorMessage = "Mời nhập user name")]
-        public string Username { get; set; }
-        [Required(ErrorMessage = "Mời nhập password")]
-        public string Password { get; set; }
+        [Key]
+        [Display(Name = "Tên đăng nhập")]
+        [Required(ErrorMessage ="Vui lòng nhập tài khoản")]
+        public string UserName { get; set; }
 
-        public bool RememberMe { get; set; }
+        [Display(Name ="Mật khẩu")]
+        [Required(ErrorMessage ="Vui lòng nhập mật khẩu")]
+        public string Password { get; set; }
     }
 }
